@@ -1,9 +1,10 @@
-.header {
-  font-size: 3.6rem;
+.intro {
+  font-size: 4rem;
   padding-top: 15rem;
   display: grid;
   color: $color--mid;
   align-content: end;
+  margin-bottom: -5rem;
   h1 {
     font-family: $font--sans;
     font-weight: normal;
@@ -16,6 +17,7 @@
     display: inline;
   }
   a {
+    white-space: nowrap;
     font-family: $font--sans-extended;
     color: $color--contrast;
     transition: all 0.2s ease;

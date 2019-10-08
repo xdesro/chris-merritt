@@ -16,6 +16,35 @@
 <script>
 import BlogListItem from "~/components/BlogListItem";
 export default {
-  components: { BlogListItem }
+  components: { BlogListItem },
+  data() {
+    return {
+      isActive: false
+    };
+  },
+  watch: {
+    isActive() {
+      if (this.isActive) {
+        this.$router.push("/#blog");
+      } else {
+        this.$router.push("/");
+      }
+    }
+  },
+  mounted() {
+    document.addEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll(e) {
+      console.log(window.scrollY >= this.$el.offsetTop);
+      if (window.scrollY >= this.$el.offsetTop) {
+        this.isActive = true;
+        // this.$router.push({ path: "/#blog" });
+      } else {
+        this.isActive = false;
+        // this.$router.push({ path: "/#intro" });
+      }
+    }
+  }
 };
 </script>

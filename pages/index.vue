@@ -1,14 +1,17 @@
 <template>
   <main class="main">
-    <Header />
+    <Intro />
     <Blog />
   </main>
 </template>
 
 <script>
-import Header from "~/components/Header";
+import Intro from "~/components/Intro";
 import Blog from "~/components/Blog";
 export default {
-  components: { Header, Blog }
+  components: { Intro, Blog },
+  mounted() {
+    // this.$router.push({ path: "#intro" });
+  }
 };
 </script>

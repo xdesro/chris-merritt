@@ -6,6 +6,7 @@
       format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "GT America";
@@ -14,6 +15,7 @@
     url("/fonts/gt-america/gt-america-trial-bold-webfont.woff") format("woff");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -24,6 +26,7 @@
       format("woff");
   font-weight: normal;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -34,4 +37,5 @@
       format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }

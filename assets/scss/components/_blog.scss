@@ -1,22 +1,20 @@
 .blog {
-  padding-top: 10rem;
-  position: relative;
-  z-index: 0;
   &:before {
-    content: "";
     position: absolute;
-    top: 0;
+    top: 8rem;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: -1;
     background-image: linear-gradient(
       to bottom,
-      transparent 9rem,
-      transparentize($color--neutral, 0.1) 13rem
+      transparent 1rem,
+      transparentize($color--neutral, 0.1) 5rem
     );
   }
   &__header {
+    padding-top: 10rem;
+
     color: $color--mid;
     .nuxt-link-active {
       color: $color--contrast;
@@ -28,13 +26,15 @@
   list-style-type: none;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 4rem;
+  grid-row-gap: 5.625rem;
+  justify-content: center;
   min-height: 50vh;
 }
 
 .blog-list-item {
-  margin-bottom: 5.625rem;
+  // max-width: 60ch;
   &__date {
     color: $color--mid;
     display: block;
@@ -53,5 +53,9 @@
     text-align: right;
     text-decoration: underline;
     display: block;
+    transition: all 0.2s ease;
+    &:hover {
+      color: $color--mid;
+    }
   }
 }
