@@ -21,5 +21,13 @@
     "eslint": "^6.5.1",
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.0"
+  },
+  "headMeta": {
+    "title": "Chris Merritt | Personal Site & Blog",
+    "description": "Personal site and blog of Chris Merritt.",
+    "siteUrl": "https://chrismerritt.cc",
+    "imageUrl": "https://chrismerritt.cc/open-graph.png",
+    "themeColor": "#1A1A1A",
+    "twitter": "@chrismerritt"
   }
 }
