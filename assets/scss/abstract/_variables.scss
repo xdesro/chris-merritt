@@ -10,3 +10,8 @@ $color--brand-instagram: hsl(349, 75%, 57%);
 
 $font--sans: "GT America", sans-serif;
 $font--sans-extended: "GT America Extended", "GT America", sans-serif;
+
+$breakpoints: (
+  sm: 24rem,
+  md: 37.5rem
+);

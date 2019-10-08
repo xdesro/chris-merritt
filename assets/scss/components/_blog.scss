@@ -14,7 +14,6 @@
   }
   &__header {
     padding-top: 10rem;
-
     color: $color--mid;
     .nuxt-link-active {
       color: $color--contrast;
@@ -26,25 +25,30 @@
   list-style-type: none;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-column-gap: 4rem;
   grid-row-gap: 5.625rem;
   justify-content: center;
   min-height: 50vh;
+  grid-template-columns: 1fr;
+  @include screen(md) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .blog-list-item {
-  // max-width: 60ch;
   &__date {
     color: $color--mid;
     display: block;
     margin-bottom: 1rem;
   }
   &__title {
-    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 2rem;
     display: inline-block;
+    font-size: 1.8rem;
+    @include screen(sm) {
+      font-size: 3rem;
+    }
   }
   &__description {
     line-height: 2;

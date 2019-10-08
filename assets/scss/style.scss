@@ -1,5 +1,6 @@
 @import "./abstract/fonts";
 @import "./abstract/variables";
+@import "./abstract/mixins";
 @import "./components/nav";
 @import "./components/header";
 @import "./components/blog";
@@ -37,9 +38,12 @@ h2 {
 }
 
 .app {
-  padding: 0 4.375rem;
   margin: 0 auto;
   max-width: 100rem;
+  padding: 0 2rem;
+  @include screen(md) {
+    padding: 0 4.375rem;
+  }
 }
 .background-merritt {
   z-index: -1;

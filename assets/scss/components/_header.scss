@@ -1,10 +1,16 @@
 .intro {
-  font-size: 4rem;
   padding-top: 15rem;
   display: grid;
   color: $color--mid;
   align-content: end;
   margin-bottom: -5rem;
+  font-size: 1.8rem;
+  @include screen(sm) {
+    font-size: 2.5rem;
+  }
+  @include screen(md) {
+    font-size: 4rem;
+  }
   h1 {
     font-family: $font--sans;
     font-weight: normal;
