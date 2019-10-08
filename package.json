@@ -1,0 +1,25 @@
+{
+  "name": "chris-merritt",
+  "version": "1.0.0",
+  "description": "Personal site and blog of Chris Merritt.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "nuxt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "personal site",
+    "blog"
+  ],
+  "author": "Henry Desroches <yo@henry.codes> (https://henry.codes)",
+  "license": "ISC",
+  "dependencies": {
+    "nuxt": "^2.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0"
+  }
+}

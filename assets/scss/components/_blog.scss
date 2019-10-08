@@ -1,0 +1,57 @@
+.blog {
+  padding-top: 10rem;
+  position: relative;
+  z-index: 0;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: linear-gradient(
+      to bottom,
+      transparent 9rem,
+      transparentize($color--neutral, 0.1) 13rem
+    );
+  }
+  &__header {
+    color: $color--mid;
+    .nuxt-link-active {
+      color: $color--contrast;
+    }
+  }
+}
+
+.blog-list {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 2rem;
+  min-height: 50vh;
+}
+
+.blog-list-item {
+  margin-bottom: 5.625rem;
+  &__date {
+    color: $color--mid;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  &__title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    display: inline-block;
+  }
+  &__description {
+    line-height: 2;
+  }
+  &__link {
+    text-align: right;
+    text-decoration: underline;
+    display: block;
+  }
+}

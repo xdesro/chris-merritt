@@ -1,0 +1,38 @@
+.nav {
+  // margin-top: 3.75rem;
+  position: fixed;
+  top: 3.75rem;
+  &__list {
+    padding: 0;
+    list-style-type: none;
+    color: $color--contrast;
+    text-transform: uppercase;
+    font-family: $font--sans-extended;
+    font-size: 1.5rem;
+    display: grid;
+    grid-gap: 2.5rem;
+    grid-auto-flow: column;
+    justify-content: start;
+  }
+  &__list-item {
+    position: relative;
+    display: inline-block;
+  }
+  &__list-link {
+    &:before {
+      content: "";
+      background-color: $color--contrast;
+      position: absolute;
+      height: 0.1875rem;
+      bottom: 0;
+      width: 100%;
+      transform: scaleX(0);
+      transition: all 0.2s ease;
+    }
+    &--active {
+      &:before {
+        transform: scaleX(1);
+      }
+    }
+  }
+}

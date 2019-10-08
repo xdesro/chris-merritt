@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "GT America Extended";
+  src: url("/fonts/gt-america-extended/gt-america-trial-extended-medium-webfont.woff2")
+      format("woff2"),
+    url("/fonts/gt-america-extended/gt-america-trial-extended-medium-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GT America";
+  src: url("/fonts/gt-america/gt-america-trial-bold-webfont.woff2")
+      format("woff2"),
+    url("/fonts/gt-america/gt-america-trial-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT America";
+  src: url("/fonts/gt-america/gt-america-trial-regular-italic-webfont.woff2")
+      format("woff2"),
+    url("/fonts/gt-america/gt-america-trial-regular-italic-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GT America";
+  src: url("/fonts/gt-america/gt-america-trial-regular-webfont.woff2")
+      format("woff2"),
+    url("/fonts/gt-america/gt-america-trial-regular-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

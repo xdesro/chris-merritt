@@ -1,0 +1,73 @@
+.header {
+  font-size: 3.6rem;
+  padding-top: 15rem;
+  display: grid;
+  color: $color--mid;
+  align-content: end;
+  h1 {
+    font-family: $font--sans;
+    font-weight: normal;
+    font-size: inherit;
+  }
+  .chris {
+    // cursor: url("~assets/img/cursor.png") 5 5, wait;
+    font-family: $font--sans-extended;
+    color: $color--contrast;
+    display: inline;
+  }
+  a {
+    font-family: $font--sans-extended;
+    color: $color--contrast;
+    transition: all 0.2s ease;
+    --brand-color: $color--mid;
+    span {
+      color: inherit;
+    }
+
+    svg {
+      width: 1ch;
+    }
+
+    &:hover {
+      color: var(--brand-color);
+    }
+    // $brands: faculty, atlas-local, linkedin, twitter, instagram;
+    // @each $brand in $brands {
+    //   &.#{$brand} {
+    //     &:hover {
+    //       color: $color--brand-#{$brand};
+    //     }
+    //   }
+    // }
+    &.faculty {
+      --brand-color: #{$color--brand-faculty};
+      //   &:hover {
+      //     color: $color--brand-faculty;
+      //   }
+    }
+    &.atlas-local {
+      --brand-color: #{$color--brand-atlas-local};
+      //   &:hover {
+      //     color: $color--brand-atlas-local;
+      //   }
+    }
+    &.linkedin {
+      --brand-color: #{$color--brand-linkedin};
+      //   &:hover {
+      //     color: $color--brand-linkedin;
+      //   }
+    }
+    &.twitter {
+      --brand-color: #{$color--brand-twitter};
+      //   &:hover {
+      //     color: $color--brand-twitter;
+      //   }
+    }
+    &.instagram {
+      --brand-color: #{$color--brand-instagram};
+      //   &:hover {
+      //     color: $color--brand-instagram;
+      //   }
+    }
+  }
+}
