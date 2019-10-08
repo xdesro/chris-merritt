@@ -1,7 +1,7 @@
 <template>
   <main class="main">
     <Intro />
-    <Blog />
+    <!-- <Blog /> -->
   </main>
 </template>
 

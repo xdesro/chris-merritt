@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <Nav />
+    <!-- <Nav /> -->
     <nuxt />
     <img class="background-merritt" src="~/assets/img/merritt-no-bg.png" alt />
   </div>
