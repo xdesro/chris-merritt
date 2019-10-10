@@ -7,7 +7,7 @@ Personal site and blog of [Chris Merritt](https://chrismerritt.cc). Get in touch
 - 🐦 — [Twitter](https://twitter.com/chrismerritt)
 - 📸 — [Instagram](https://www.instagram.com/chrisbmerritt)
 
-# 🎉 Getting Started
+## 🎉 Getting Started
 
 1. 📦 Install dependencies.
    ```sh
