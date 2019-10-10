@@ -2,14 +2,16 @@
   <div class="app">
     <!-- <Nav /> -->
     <nuxt />
-    <img class="background-merritt" src="~/assets/img/merritt-no-bg.png" alt />
+    <BackgroundImage />
   </div>
 </template>
 <script>
 import Nav from "~/components/Nav";
+import BackgroundImage from "~/components/BackgroundImage";
 export default {
   components: {
-    Nav
+    Nav,
+    BackgroundImage
   }
 };
 </script>
