@@ -1,15 +1,15 @@
 <template>
   <main class="main">
-    <Intro />
+    <Header />
     <Blog />
   </main>
 </template>
 
 <script>
-import Intro from "~/components/Intro";
+import Header from "~/components/Header";
 import Blog from "~/components/Blog";
 export default {
-  components: { Intro, Blog },
+  components: { Header, Blog },
   mounted() {
     // this.$router.push({ path: "#intro" });
   }

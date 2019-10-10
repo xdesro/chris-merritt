@@ -45,13 +45,15 @@ h2 {
     padding: 0 4.375rem;
   }
 }
-.background-merritt {
-  z-index: -1;
-  position: absolute;
-  top: -2vw;
-  transform: rotate(180deg);
-  right: 5vw;
-  filter: saturate(0);
-  width: 30vw;
-  mix-blend-mode: color-dodge;
+.background {
+  &__merritt {
+    z-index: -1;
+    position: absolute;
+    top: -2vw;
+    transform: rotate(180deg);
+    right: 5vw;
+    filter: saturate(0);
+    width: 30vw;
+    mix-blend-mode: color-dodge;
+  }
 }

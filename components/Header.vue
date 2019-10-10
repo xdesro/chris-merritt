@@ -12,8 +12,11 @@
       </a> in Greenville, South Carolina.
     </h1>
     <p>
-      You can read his
-      <a href="#blog">blog</a>, contact him
+      You can
+      <del>
+        read his
+        <a href="#blog">blog</a>
+      </del>, contact him
       <a href="mailto:hello@chrismerritt.cc">by email</a>, or check him out on
       <a class="linkedin" href="https://www.linkedin.com/in/chrisbmerritt">
         <Icon name="linkedin" />
@@ -35,6 +38,17 @@
 import Icon from "~/components/Icon";
 
 export default {
-  components: { Icon }
+  components: { Icon },
+  mounted() {
+    this.$nextTick(() => {
+      document.addEventListener("scroll", this.handleScroll);
+    });
+  },
+  methods: {
+    handleScroll(e) {
+      const atlo = this.$el.querySelector(".atlo-svg");
+      atlo.style.setProperty("--rotate", `${window.scrollY / 10}deg`);
+    }
+  }
 };
 </script>
