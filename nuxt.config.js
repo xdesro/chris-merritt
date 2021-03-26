@@ -1,7 +1,14 @@
 import pkg from "./package";
-import dotenv from "dotenv";
-dotenv.config();
+
+require("dotenv").config();
+const contentful = require("contentful");
+
+const client = contentful.createClient({
+  space: process.env.CTF_SPACE_ID,
+  accessToken: process.env.CTF_CDA_ACCESS_TOKEN,
+});
 export default {
+  target: "static",
   head: {
     htmlAttrs: {
       lang: "en",
@@ -53,6 +60,21 @@ export default {
   env: {
     CTF_SPACE_ID: process.env.CTF_SPACE_ID,
     CTF_CDA_ACCESS_TOKEN: process.env.CTF_CDA_ACCESS_TOKEN,
+  },
+  generate: {
+    routes: () => {
+      return client
+        .getEntries({
+          content_type: "blogPost",
+          order: "-fields.publishDate",
+        })
+        .then((res) => {
+          return res.items.map((entry) => ({
+            route: `/blog/${entry.fields.slug}`,
+            payload: entry,
+          }));
+        });
+    },
   },
   router: {
     linkExactActiveClass: "nav__list-link--active",

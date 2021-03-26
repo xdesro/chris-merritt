@@ -4,16 +4,7 @@
     <time class="post__date" :datetime="post.fields.publishDate">
       {{ postDate }}
     </time>
-    <div class="post__content rendered" v-html="postContent"> </div>
-    <!-- <p class="author">By {{ post.fields.author.fields.name }}</p> -->
-    <!-- <div
-     class="image"
-     :style="
-       `background: url(https:${post.fields.heroImage.fields.file.url}) center center no-repeat`
-     "
-   ></div> -->
-    <!-- <article v-html="$md.render(post.fields.body)"></article> -->
-    {{ this.layout }}
+    <div class="post__content rendered" v-html="postContent" />
   </section>
 </template>
 
