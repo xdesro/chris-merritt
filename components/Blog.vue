@@ -4,11 +4,15 @@
       <nuxt-link to="#blog">Blog</nuxt-link>
     </h2>
     <ul class="blog-list">
+      <BlogListItem
+        v-for="(post, postIndex) in posts"
+        :key="postIndex"
+        :post="post"
+      />
+      <!-- <BlogListItem />
       <BlogListItem />
       <BlogListItem />
-      <BlogListItem />
-      <BlogListItem />
-      <BlogListItem />
+      <BlogListItem /> -->
     </ul>
   </section>
 </template>
@@ -19,8 +23,13 @@ export default {
   components: { BlogListItem },
   data() {
     return {
-      isActive: false
+      isActive: false,
     };
+  },
+  computed: {
+    posts() {
+      return this.$store.state.posts.map((post) => post.fields);
+    },
   },
   watch: {
     isActive() {
@@ -29,7 +38,7 @@ export default {
       } else {
         this.$router.push("/");
       }
-    }
+    },
   },
   mounted() {
     document.addEventListener("scroll", this.handleScroll);
@@ -44,7 +53,7 @@ export default {
         this.isActive = false;
         // this.$router.push({ path: "/#intro" });
       }
-    }
-  }
+    },
+  },
 };
 </script>

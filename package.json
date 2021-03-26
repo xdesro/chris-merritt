@@ -16,11 +16,14 @@
   "author": "Henry Desroches <yo@henry.codes> (https://henry.codes)",
   "license": "ISC",
   "dependencies": {
-    "nuxt": "^2.10.0"
+    "@contentful/rich-text-html-renderer": "^14.1.2",
+    "contentful": "^8.2.0",
+    "dotenv": "^8.2.0",
+    "nuxt": "^2.10.0",
+    "sass": "^1.32.8"
   },
   "devDependencies": {
     "eslint": "^6.5.1",
-    "node-sass": "^4.13.1",
     "sass-loader": "^8.0.0"
   },
   "headMeta": {

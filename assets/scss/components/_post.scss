@@ -1,0 +1,18 @@
+.post {
+  margin-top: 15rem;
+  max-width: 55ch;
+
+  margin: 15rem auto;
+  &__title {
+    font-size: 3rem;
+    line-height: 1;
+    @include screen(sm) {
+      font-size: 4rem;
+    }
+  }
+  &__date {
+    color: $color--mid;
+    display: block;
+    margin-bottom: 1rem;
+  }
+}

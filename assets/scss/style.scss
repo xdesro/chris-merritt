@@ -4,6 +4,7 @@
 @import "./components/nav";
 @import "./components/header";
 @import "./components/blog";
+@import "./components/post";
 
 *,
 *:before,
@@ -55,5 +56,17 @@ h2 {
     filter: saturate(0);
     width: 30vw;
     mix-blend-mode: color-dodge;
+  }
+}
+.rendered {
+  p {
+    line-height: 1.5;
+  }
+  blockquote {
+    border-left: 0.25rem solid $color--mid;
+    margin-left: 0;
+    padding-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }

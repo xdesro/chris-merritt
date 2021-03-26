@@ -1,10 +1,25 @@
 <template>
   <li class="blog-list-item">
-    <span class="blog-list-item__date">25-Dec-2018</span>
-    <span class="blog-list-item__title">A Recent Blog Post Title</span>
-    <p
-      class="blog-list-item__description"
-    >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <a href="#" class="blog-list-item__link">view the post—</a>
+    <span class="blog-list-item__date">{{ postDate }}</span>
+    <span class="blog-list-item__title">{{ post.title }}</span>
+    <p class="blog-list-item__description" v-html="post.excerpt"></p>
+    <a :href="`/blog/${post.slug}`" class="blog-list-item__link">
+      view the post—
+    </a>
   </li>
 </template>
+
+<script>
+export default {
+  props: ["post"],
+  computed: {
+    postDate() {
+      return new Date(this.post.publishDate).toLocaleDateString("en-US", {
+        day: "2-digit",
+        month: "short",
+        year: "numeric",
+      });
+    },
+  },
+};
+</script>

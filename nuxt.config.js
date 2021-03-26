@@ -1,8 +1,10 @@
 import pkg from "./package";
+import dotenv from "dotenv";
+dotenv.config();
 export default {
   head: {
     htmlAttrs: {
-      lang: "en"
+      lang: "en",
     },
     title: pkg.headMeta.title,
     meta: [
@@ -12,7 +14,7 @@ export default {
         hid: "description",
         name: "description",
         itemprop: "description",
-        content: pkg.headMeta.description
+        content: pkg.headMeta.description,
       },
       { name: "theme-color", content: pkg.headMeta.themeColor },
       { name: "msapplication-TileColor", content: pkg.headMeta.themeColor },
@@ -23,12 +25,12 @@ export default {
       {
         hid: "twitter:title",
         name: "twitter:title",
-        content: pkg.headMeta.title
+        content: pkg.headMeta.title,
       },
       {
         hid: "twitter:description",
         name: "twitter:description",
-        content: pkg.headMeta.description
+        content: pkg.headMeta.description,
       },
       { name: "twitter:site", content: pkg.headMeta.twitter },
       { name: "twitter:creator", content: pkg.headMeta.twitter },
@@ -37,16 +39,21 @@ export default {
       {
         hid: "og:description",
         name: "og:description",
-        content: pkg.headMeta.description
+        content: pkg.headMeta.description,
       },
       { name: "og:image", content: pkg.headMeta.imageUrl },
       { hid: "og:url", name: "og:url", content: pkg.headMeta.siteUrl },
       { name: "og:site_name", content: pkg.headMeta.title },
       { name: "og:locale", content: "en_US" },
-      { name: "og:type", content: "website" }
-    ]
+      { name: "og:type", content: "website" },
+    ],
   },
+  plugins: ["~/plugins/contentful", "~/plugins/posts"],
   css: ["@/assets/scss/style.scss"],
+  env: {
+    CTF_SPACE_ID: process.env.CTF_SPACE_ID,
+    CTF_CDA_ACCESS_TOKEN: process.env.CTF_CDA_ACCESS_TOKEN,
+  },
   router: {
     linkExactActiveClass: "nav__list-link--active",
     scrollBehavior: async (to, from, savedPosition) => {
@@ -88,6 +95,6 @@ export default {
       } else {
         return window.scrollTo(0, 0);
       }
-    }
-  }
+    },
+  },
 };
