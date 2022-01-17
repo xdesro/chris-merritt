@@ -67,25 +67,14 @@
     &:hover {
       color: var(--brand-color);
     }
-    // $brands: faculty, atlas-local, linkedin, twitter, instagram;
-    // @each $brand in $brands {
-    //   &.#{$brand} {
-    //     &:hover {
-    //       color: $color--brand-#{$brand};
-    //     }
-    //   }
-    // }
     &.faculty {
       --brand-color: #{$color--brand-faculty};
-      //   &:hover {
-      //     color: $color--brand-faculty;
-      //   }
     }
     &.atlas-local {
       --brand-color: #{$color--brand-atlas-local};
-      //   &:hover {
-      //     color: $color--brand-atlas-local;
-      //   }
+    }
+    &.greenville {
+      --brand-color: #{$color--brand-greenville};
     }
     .atlo-svg {
       --rotate: 0deg;

@@ -9,7 +9,7 @@
         <Icon name="atlas-local" />
         <span>Atlas Local</span>
       </a>
-      in Greenville, South Carolina.
+      in <a class="greenville" href="http://www.lifeingreenville.com/">Greenville</a>, South Carolina.
     </h1>
     <p>
       You can read his
