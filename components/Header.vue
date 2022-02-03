@@ -2,7 +2,7 @@
   <section class="intro" id="intro">
     <h1>
       <span class="chris">Chris Merritt</span>
-      is a project manager at
+      is a managing director at
       <a class="faculty" href="https://faculty.com"> <Icon name="faculty" />Faculty </a>
       and the managing partner at
       <a class="atlas-local" href="https://www.atlaslocal.com/">
