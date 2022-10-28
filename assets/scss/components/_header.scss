@@ -76,6 +76,9 @@
     &.greenville {
       --brand-color: #{$color--brand-greenville};
     }
+    &.n7th {
+      --brand-color: #{$color--brand-n7th};
+    }
     .atlo-svg {
       --rotate: 0deg;
       transform-origin: 50% 50%;
