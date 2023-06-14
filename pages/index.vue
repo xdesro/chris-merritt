@@ -1,7 +1,7 @@
 <template>
   <main class="main">
     <Header />
-    <Blog />
+    <!-- <Blog /> -->
   </main>
 </template>
 
@@ -15,6 +15,6 @@ export default {
       "%cCoded with 💛 by @xdesro in 2019. — https://henry.codes",
       "color: white; font-family:monospace; font-size: 15px; background-image: linear-gradient(to right, hsl(349, 75%, 57%), hsl(38, 100%, 58%));padding: 24px;"
     );
-  }
+  },
 };
 </script>
