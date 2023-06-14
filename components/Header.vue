@@ -2,8 +2,7 @@
   <section class="intro" id="intro">
     <h1>
       <span class="chris">Chris Merritt</span>
-      is the chief product officer at <a class="n7th" href="https://n7th.com/"> <Icon name="n7th" /> N7th</a>, managing
-      director at
+      is managing director at
       <a class="faculty" href="https://faculty.com"> <Icon name="faculty" />Faculty </a>
       and the managing partner at
       <a class="atlas-local" href="https://www.atlaslocal.com/">
